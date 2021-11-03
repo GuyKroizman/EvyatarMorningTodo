@@ -5,3 +5,8 @@ h1 {
   color: blue;
   margin-right: 30px;
 }
+
+input {
+  size: 60px;
+  margin-right: 130px;
+}
