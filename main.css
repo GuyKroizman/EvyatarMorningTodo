@@ -1,12 +1,12 @@
 body {
   background-color: pink;
 }
-h1 {
+#title {
   color: blue;
   margin-right: 30px;
 }
 
-input[type=checkbox] {
+.checkbox {
   /* Double-sized Checkboxes */
   -ms-transform: scale(2); /* IE */
   -moz-transform: scale(2); /* FF */
@@ -16,4 +16,6 @@ input[type=checkbox] {
   padding: 10px;
   margin-right: 130px;
   margin-left: 25px;
+
+  font-size: x-large;
 }
