@@ -3,8 +3,9 @@ body {
   direction: rtl;
 }
 #title {
-  color: blue;
+  color: rgb(0, 162, 255);
   margin-right: 30px;
+  font-size: 60px;
 }
 
 .checkbox {
@@ -21,5 +22,22 @@ body {
 
 .checkbox-text {
   font-size: x-large;
+}
 
+.app-container {
+  display: flex;
+}
+
+.task-container {
+  display: flex;
+}
+
+.task-points {
+  display: flex;
+  justify-content: start;
+}
+
+.task-checkbox {
+  display: flex;
+  justify-content: end;
 }
