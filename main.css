@@ -35,9 +35,11 @@ body {
 .task-points {
   display: flex;
   justify-content: start;
+  flex:1;
 }
 
 .task-checkbox {
   display: flex;
   justify-content: end;
+  flex:1;
 }
