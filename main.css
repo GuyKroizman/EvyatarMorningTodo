@@ -20,9 +20,6 @@ body {
   margin-left: 25px;
 }
 
-.checkbox-text {
-}
-
 .task-container {
   display: flex;
   font-size: larger;
