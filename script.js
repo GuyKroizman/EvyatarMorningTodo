@@ -39,12 +39,12 @@ function getSecondsToDeadline() {
     const secNow = timeNow.getSeconds()
 
     const secSinceMidnight = hourNow * 60 * 60 + minNow * 60 + secNow
-    const deadlineSec = 7 * 60 * 60 + 30 * 60
+    const deadlineSec = 7 * 60 * 60 + 35 * 60
 
     if(secSinceMidnight > deadlineSec) {
         const hourTilTomorrow = 24 - hourNow -1
         const minTilHour = 60 - minNow - 1
-        const secTilMin = 60 - 23 -1
+        const secTilMin = 60 - secNow -1
         return deadlineSec + hourTilTomorrow * 60 * 60 + minTilHour * 60 + secTilMin
     }
 
