@@ -11,13 +11,14 @@ function fetchCatPic() {
         }).catch(e => console.error(e))
 }
 
-function startTimer(duration, display) {
+function startTimer(display) {
     if(!display) {
         console.error('did not get element for display')
         return ;
     }
-    let timer = duration, minutes, seconds;
     setInterval(function () {
+        let timer = getSecondsToDeadline(), minutes, seconds;
+
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
@@ -26,9 +27,6 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
-            timer = duration;
-        }
     }, 1000);
 }
 
@@ -52,6 +50,6 @@ function getSecondsToDeadline() {
 }
 
 const display = document.querySelector("#timer");
-startTimer( getSecondsToDeadline(), display )
+startTimer( display )
 
 fetchCatPic()
